@@ -11,7 +11,8 @@ sudo dnf install -y\
             pulseaudio-libs-devel\
             libdbusmenu-gtk3\
             libsoup3\
-            pam-devel
+            pam-devel\
+            sudo
 
 git clone --recursive https://github.com/Aylur/ags.git /tmp/agsv1
 cd /tmp/agsv1
