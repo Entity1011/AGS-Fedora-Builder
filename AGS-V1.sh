@@ -18,4 +18,4 @@ cd /tmp/agsv1
 git checkout v1
 npm install
 meson setup build
-meson install -C build
+sudo meson install -C build
