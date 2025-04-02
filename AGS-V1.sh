@@ -1,4 +1,5 @@
-sudo dnf install typescript\
+sudo dnf install -y\
+            typescript\
             npm\
             meson\
             gjs-devel\
@@ -13,6 +14,7 @@ sudo dnf install typescript\
 
 git clone --recursive https://github.com/Aylur/ags.git /tmp/agsv1
 cd /tmp/agsv1
+git checkout v1
 npm install
 meson setup build
 meson install -C build
