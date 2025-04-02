@@ -10,7 +10,8 @@ sudo dnf install -y\
             NetworkManager\
             pulseaudio-libs-devel\
             libdbusmenu-gtk3\
-            libsoup3
+            libsoup3\
+            pam-devel
 
 git clone --recursive https://github.com/Aylur/ags.git /tmp/agsv1
 cd /tmp/agsv1
