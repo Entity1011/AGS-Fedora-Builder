@@ -43,9 +43,7 @@ sudo dnf install -y \
     fish \
     gtk-layer-shell-devel \
     ddcutil \
-    libdbusmenu-gtk-devel \
     libdbusmenu-gtk3-devel \
-    gnome-bluetooth3 \
     gnome-bluetooth \
     firefox \
     xdg-user-dir \
@@ -63,7 +61,6 @@ sudo dnf install -y \
 
 # We need dart-sass
 sudo npm install -g sass
-systemctl enable --user --now swww
 
 # Install StarShip
 cargo install starship --locked
@@ -71,7 +68,8 @@ sudo ln -s /home/Entity/.cargo/bin/starship /usr/local/bin/starship
 
 git clone https://github.com/end-4/dots-hyprland /tmp/Dots
 cd /tmp/Dots
-sed "s/exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 || /usr/libexec/polkit-gnome-authentication-agent-1/exec-once= /usr/libexec/polkit-mate-authentication-agent-1/g" .config/hyprland/execs.conf 
+sed "s/exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 || /usr/libexec/polkit-gnome-authentication-agent-1/exec-once= /usr/libexec/polkit-mate-authentication-agent-1/g" .config/hyprland/execs.conf
+sed "s/meson install -C build/sudo meson install -C build/" ./scriptdata/installers
 cp .config/ ~ -R
 cp .local/ ~ -R
 bash -c "./manual-install-helper.sh <<< \"yesforall\""
