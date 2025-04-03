@@ -69,7 +69,7 @@ sudo ln -s /home/Entity/.cargo/bin/starship /usr/local/bin/starship
 git clone https://github.com/end-4/dots-hyprland /tmp/Dots
 cd /tmp/Dots
 sed "s/exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 || /usr/libexec/polkit-gnome-authentication-agent-1/exec-once= /usr/libexec/polkit-mate-authentication-agent-1/g" .config/hyprland/execs.conf
-sed "s/meson install -C build/sudo meson install -C build/" ./scriptdata/installers
+sed "s/meson install -C build/sudo meson install -C build/g" ./scriptdata/installers
 cp .config/ ~ -R
 cp .local/ ~ -R
 bash -c "./manual-install-helper.sh <<< \"yesforall\""
