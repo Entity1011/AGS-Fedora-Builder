@@ -63,7 +63,7 @@ sudo npm install -g sass
 
 # Install StarShip
 cargo install starship --locked
-sudo ln -s /home/Entity/.cargo/bin/starship /usr/local/bin/starship
+sudo ln -s ~/.cargo/bin/starship /usr/local/bin/starship
 
 git clone https://github.com/end-4/dots-hyprland /tmp/Dots
 cd /tmp/Dots
