@@ -45,7 +45,6 @@ sudo dnf install -y \
     ddcutil \
     libdbusmenu-gtk3-devel \
     gnome-bluetooth \
-    firefox \
     xdg-user-dir \
     yad \
     bc \
