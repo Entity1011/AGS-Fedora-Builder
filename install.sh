@@ -56,7 +56,8 @@ sudo dnf install -y \
     wget \
     unzip \
     curl \
-    gnome-control-center
+    gnome-control-center \
+    python3-devel
 
 # We need dart-sass
 sudo npm install -g sass
